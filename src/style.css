@@ -1,6 +1,16 @@
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .index-title {
     color: darkcyan;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hook-block {
+    border-radius: 6px;
+    padding: 8px 8px;
+    background-color:whitesmoke
 }
 
 .use-state-hook {

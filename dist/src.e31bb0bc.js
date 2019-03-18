@@ -25731,11 +25731,37 @@ var Example = function Example() {
       count = _useState2[0],
       setCount = _useState2[1];
 
-  return _react.default.createElement("div", null, _react.default.createElement("p", null, "You clicked ", count, " times"), _react.default.createElement("button", {
+  var _useState3 = (0, _react.useState)(10),
+      _useState4 = _slicedToArray(_useState3, 2),
+      lower = _useState4[0],
+      setLower = _useState4[1];
+
+  var _useState5 = (0, _react.useState)(5),
+      _useState6 = _slicedToArray(_useState5, 2),
+      number = _useState6[0],
+      setNumber = _useState6[1];
+
+  return _react.default.createElement("div", {
+    className: "hook-block"
+  }, _react.default.createElement("h3", {
+    className: "use-state-hook"
+  }, "Use state hook"), _react.default.createElement("p", null, "You clicked ", count, " times"), _react.default.createElement("button", {
     onClick: function onClick() {
       return setCount(count + 1);
     }
-  }, "Click me"));
+  }, "Click me"), _react.default.createElement("p", null, "Number ", lower), _react.default.createElement("button", {
+    onClick: function onClick() {
+      return setLower(lower - 1);
+    }
+  }, "Descrease me"), _react.default.createElement("p", null, " Increase and decrease me: ", number), _react.default.createElement("button", {
+    onClick: function onClick() {
+      return setNumber(number - 1);
+    }
+  }, "Descrease me"), _react.default.createElement("button", {
+    onClick: function onClick() {
+      return setNumber(number + 1);
+    }
+  }, "Increase me"));
 };
 
 var _default = Example;
@@ -25871,9 +25897,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 (0, _reactDom.render)(React.createElement("div", null, React.createElement("h1", {
   className: "index-title"
-}, "REACT HOOKS LEARNING"), React.createElement("h3", {
-  className: "use-state-hook"
-}, "Use state hook"), React.createElement(_UseState.default, null), React.createElement("h3", {
+}, "REACT HOOKS LEARNING"), React.createElement(_UseState.default, null), React.createElement("h3", {
   className: "use-state-hook"
 }, "Effect hooks"), React.createElement(_UseEffect.default, null)), document.getElementById('app'));
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/UseState":"components/UseState.js","./components/UseEffect":"components/UseEffect.js","../src/style.css":"style.css"}],"../../../.nvm/versions/node/v10.4.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
